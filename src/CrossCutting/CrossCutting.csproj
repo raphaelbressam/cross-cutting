@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<ImplicitUsings>false</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+
+		<PackageId>Cross-Cutting</PackageId>
+		<Version>1.0.0</Version>
+		<icon>https://github.com/raphaelbressam/cross-cutting/media/icon.png</icon>
+		<License>MIT</License>
+		<Authors>Raphael Bressam</Authors>
+		<Company>raphaelbressam</Company>
+		<PackageDescription>Common methods provided by a specific layer or service used by all layers of an application. It would be like a layer/service that crosses the entire hierarchy.</PackageDescription>
+		<Description>Common methods provided by a specific layer or service used by all layers of an application. It would be like a layer/service that crosses the entire hierarchy.</Description>
+		<RepositoryUrl>https://github.com/raphaelbressam/cross-cutting</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/raphaelbressam/cross-cutting</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageTags>crosscuttingconcerns;json;</PackageTags>
+		<ReleaseNotes>Visit our GitHub before installing.</ReleaseNotes>
+		<Title>Cross-Cutting</Title>
+		<Summary>Common methods provided by a specific layer or service used by all layers of an application. It would be like a layer/service that crosses the entire hierarchy.</Summary>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Text.Json" Version="7.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\media\icon.png" Pack="true" PackagePath="\" />
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>
