@@ -28,7 +28,7 @@ Install-Package Cross-Cutting
 dotnet add package Cross-Cutting
 ```
 
-## How to use
+## Json Utils
 ### Serialize
 ```csharp
 Person person = new Person("Raphael", "Bressam");
@@ -38,4 +38,20 @@ var jsonString = JsonParser.Serialize(person);
 ```csharp
 string jsonString = "{ \"first_name\":\"Raphael\", \"last_name\":\"Bressam\" }";
 Person person = JsonParser.Deserialize<Person>(jsonString);
+```
+
+## String Extensions
+### ToBase64String
+```csharp
+using CrossCutting.Extensions;
+
+string fullName = "Contoso Dias";
+string base64String = fullName.ToBase64String();
+```
+### FromBase64String
+```csharp
+using CrossCutting.Extensions;
+
+string base64String = "Q29udG9zbyBEaWFz";
+string fullName = base64String.FromBase64String();
 ```
